@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Herrajes Ituzaingó · Herrajes para muebles, obra y automatización de portones</title>
+<meta name="description" content="Herrajes para muebles y obras, y equipos para automatizar portones. Bacacay 939, Ituzaingó. Abierto, atendido por sus dueños.">
+<meta name="theme-color" content="#E0231A">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* rojo pipeteado del logo de @herrajesituzaingo */
+  --rojo:#E0231A;
+  --rojo-osc:#A8150E;
+  --rojo-claro:#FDECEA;
+  --rojo-borde:#F6C9C5;
+  --tinta:#232323;
+  --tinta-2:#4C4C4C;
+  --gris:#78787D;
+  --linea:#E6E4E4;
+  --papel:#fff;
+  --papel-2:#F8F7F6;
+  --wa:#25d366;
+  --wa-osc:#128c4b;
+  --r:14px;
+  --ancho:1120px;
+  --f:'Figtree',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--papel);color:var(--tinta);font-family:var(--f);font-size:16px;line-height:1.5;overflow-x:hidden}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit;text-decoration:none}
+.caja{width:100%;max-width:var(--ancho);margin:0 auto;padding:0 18px}
+section{padding:44px 0}
+h1,h2,h3{line-height:1.05;letter-spacing:-.028em;font-weight:900}
+h1{font-size:clamp(33px,9vw,58px)}
+h2{font-size:clamp(25px,6.6vw,38px)}
+h3{font-size:18px;letter-spacing:-.015em;font-weight:800}
+p{text-wrap:pretty}
+.rotulo{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--rojo-osc);background:var(--rojo-claro);border-radius:99px;padding:5px 11px;margin-bottom:11px}
+.sub{color:var(--gris);font-size:15.5px;margin-top:11px;max-width:56ch}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:14px 18px;border-radius:11px;font-size:15px;font-weight:800;
+  border:2px solid transparent;cursor:pointer;line-height:1;font-family:inherit}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-wa{background:var(--wa);color:#03351b}
+.btn-ro{background:var(--rojo);color:#fff}
+.btn-linea{border-color:var(--linea);color:var(--tinta);background:#fff}
+.btn-chico{padding:10px 14px;font-size:14px;border-radius:9px}
+.btn:focus-visible{outline:3px solid var(--rojo);outline-offset:2px}
+
+/* ---------- barra ---------- */
+.top{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);backdrop-filter:blur(9px);border-bottom:1px solid var(--linea)}
+.top .caja{display:flex;align-items:center;gap:12px;height:60px}
+.marca{display:flex;align-items:center;gap:10px;margin-right:auto;min-width:0}
+.iso{width:36px;height:36px;flex:none}
+.marca b{font-size:16.5px;font-weight:900;letter-spacing:-.03em;line-height:1.05;display:block}
+.marca small{display:block;font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--gris);font-weight:700}
+.solo-gr{display:none}
+@media(min-width:760px){.solo-gr{display:inline-flex}}
+
+/* ---------- portada ----------
+   Sin foto del frente a proposito: las unicas que hay son capturas de Google
+   Street View y no se pueden publicar. Se reemplazan por la foto propia
+   apenas la saquen en la visita. */
+.hero{padding:40px 0 4px;position:relative;overflow:hidden;
+  background:linear-gradient(168deg,#fff 0%,var(--rojo-claro) 100%)}
+.hero h1 em{font-style:normal;color:var(--rojo)}
+.hero .bajada{color:var(--tinta-2);font-size:16.5px;margin-top:14px;max-width:44ch;font-weight:500}
+.sellos{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.sello{display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--rojo-borde);
+  border-radius:99px;padding:8px 13px;font-size:13.5px;font-weight:700}
+.sello svg{width:16px;height:16px;flex:none}
+.sello .estrella{color:#f5b301}
+.sello b{color:var(--tinta)}
+.sello span{color:var(--gris);font-weight:600}
+.acciones{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.acciones .btn{flex:1 1 180px}
+/* la marca en grande, que es lo que reemplaza a la foto */
+.grafico{margin:34px -18px -4px;padding:34px 18px 0;display:flex;justify-content:center;align-items:flex-end;
+  gap:0;overflow:hidden}
+.grafico .iso-xl{width:min(72vw,300px);height:auto;opacity:.95;
+  filter:drop-shadow(0 26px 44px rgba(224,35,26,.32));transform:translateY(12px)}
+
+/* ---------- rubros ---------- */
+.rubros{display:grid;gap:12px;margin-top:22px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.rubro{border:1px solid var(--linea);border-radius:var(--r);padding:22px;background:#fff}
+.rubro .ico{width:44px;height:44px;border-radius:11px;display:grid;place-items:center;
+  background:var(--rojo-claro);color:var(--rojo);margin-bottom:13px}
+.rubro .ico svg{width:23px;height:23px}
+.rubro p{color:var(--gris);font-size:14.5px;margin-top:7px}
+.rubro ul{margin-top:11px;padding-left:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.rubro li{font-size:12.5px;font-weight:700;color:var(--tinta-2);background:var(--papel-2);
+  border:1px solid var(--linea);border-radius:99px;padding:5px 10px}
+
+/* ---------- por que ---------- */
+.franja{background:var(--papel-2);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.motivos{display:grid;gap:12px;margin-top:22px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.motivo{background:#fff;border:1px solid var(--linea);border-radius:var(--r);padding:22px}
+.motivo b{display:block;font-size:16.5px;font-weight:800;letter-spacing:-.015em;margin-bottom:6px}
+.motivo p{color:var(--gris);font-size:14.5px}
+.motivo .n{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:8px;
+  background:var(--rojo);color:#fff;font-weight:900;font-size:14px;margin-bottom:13px}
+
+/* ---------- opiniones ---------- */
+.ops{display:grid;gap:12px;margin-top:22px;grid-template-columns:repeat(auto-fit,minmax(265px,1fr))}
+.op{border:1px solid var(--linea);border-radius:var(--r);padding:22px;background:#fff}
+.op .estrellas{color:#f5b301;font-size:14px;letter-spacing:.08em;margin-bottom:9px}
+.op p{font-size:15px;color:var(--tinta-2)}
+.op cite{display:block;margin-top:11px;font-style:normal;font-size:13px;color:var(--gris);font-weight:700}
+
+/* ---------- donde ---------- */
+.donde{display:grid;gap:22px}
+@media(min-width:860px){.donde{grid-template-columns:1fr 1fr;align-items:start}}
+.dato{display:flex;gap:13px;padding:15px 0;border-bottom:1px solid var(--linea);align-items:flex-start}
+.dato:last-child{border-bottom:0}
+.dato svg{width:20px;height:20px;flex:none;color:var(--rojo);margin-top:2px}
+.dato b{display:block;font-size:15.5px;font-weight:800}
+.dato span{display:block;color:var(--gris);font-size:14.5px;margin-top:2px}
+.mapa{border:1px solid var(--linea);border-radius:var(--r);overflow:hidden;min-height:300px}
+.mapa iframe{width:100%;height:100%;min-height:300px;border:0;display:block}
+
+/* ---------- pie ---------- */
+.pie{background:var(--tinta);color:#C9C6C6;padding:34px 0 26px;font-size:14px}
+.pie .caja{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
+.pie b{color:#fff}
+.pie .firma{font-size:12.5px;color:#8E8A8A}
+.pie .firma a{color:#BFBABA;text-decoration:underline}
+
+.flota{position:fixed;right:15px;bottom:15px;z-index:50;box-shadow:0 10px 26px -8px rgba(35,35,35,.5)}
+@media(min-width:900px){.flota{right:24px;bottom:24px}}
+@media(prefers-reduced-motion:no-preference){
+  .rev{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+  .rev.in{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<svg style="display:none">
+  <!-- el isotipo: el circulo rojo con la "Hi", como en su cuenta -->
+  <symbol id="iso" viewBox="0 0 64 64">
+    <circle cx="32" cy="32" r="31" fill="#E0231A"/>
+    <path fill="#fff" d="M17 17h7.4v11.6h9.2V17H41v30h-7.4V35.2h-9.2V47H17z"/>
+    <rect x="44.6" y="26" width="6.6" height="21" fill="#fff"/>
+    <circle cx="47.9" cy="20.4" r="3.6" fill="#fff"/>
+  </symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2m5.8 14.16c-.24.68-1.42 1.3-1.95 1.34-.5.04-.98.22-3.3-.69-2.78-1.09-4.54-3.94-4.68-4.12-.13-.18-1.11-1.48-1.11-2.82 0-1.34.7-2 .95-2.27.25-.27.54-.34.72-.34h.52c.17 0 .39-.6.6.46.24.53.8 1.87.87 2 .07.14.11.29.02.47-.9.18-.14.29-.27.45l-.4.47c-.13.13-.27.28-.12.55.15.27.66 1.09 1.42 1.77.98.87 1.8 1.14 2.07 1.27.27.14.42.11.58-.07.16-.18.67-.78.85-1.05.18-.27.36-.22.6-.13.25.09 1.57.74 1.84.87.27.14.45.2.51.31.07.11.07.64-.17 1.32"/></symbol>
+  <symbol id="tel" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.39 21 3 13.61 3 4.5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02z"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16m0 2.16c-3.14 0-3.51.01-4.75.07-1.15.05-1.77.24-2.18.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.16.41-.36 1.03-.41 2.18-.06 1.24-.07 1.61-.07 4.75s.01 3.51.07 4.75c.05 1.15.24 1.77.41 2.18.21.55.47.94.88 1.35.41.41.8.67 1.35.88.41.16 1.03.36 2.18.41 1.24.06 1.61.07 4.75.07s3.51-.01 4.75-.07c1.15-.05 1.77-.24 2.18-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.16-.41.36-1.03.41-2.18.06-1.24.07-1.61.07-4.75s-.01-3.51-.07-4.75c-.05-1.15-.24-1.77-.41-2.18a3.6 3.6 0 0 0-.88-1.35 3.6 3.6 0 0 0-1.35-.88c-.41-.16-1.03-.36-2.18-.41-1.24-.06-1.61-.07-4.75-.07m0 3.68a5.99 5.99 0 1 1 0 11.98 5.99 5.99 0 0 1 0-11.98m0 9.88a3.89 3.89 0 1 0 0-7.78 3.89 3.89 0 0 0 0 7.78m7.63-10.12a1.4 1.4 0 1 1-2.8 0 1.4 1.4 0 0 1 2.8 0"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5"/></symbol>
+  <symbol id="reloj" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m1 10.6 4 2.3-.9 1.6L11 13V6h2z"/></symbol>
+  <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27 5.18 3.13-1.37-5.89 4.57-3.96-6.02-.51L12 4.5 9.64 10.04l-6.02.51 4.57 3.96-1.37 5.89z"/></symbol>
+  <symbol id="cajon" viewBox="0 0 24 24"><path fill="currentColor" d="M4 3h16a1 1 0 0 1 1 1v6H3V4a1 1 0 0 1 1-1m5 3v2h6V6zM3 12h18v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1zm6 3v2h6v-2z"/></symbol>
+  <symbol id="porton" viewBox="0 0 24 24"><path fill="currentColor" d="M3 4h18v2H3zm0 4h8v12H3zm10 0h8v12h-8zM5 10v8h4v-8zm10 0v8h4v-8z"/></symbol>
+  <symbol id="obra" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 2 8.5V10h20V8.5zM4 12h3v8H4zm6.5 0h3v8h-3zM17 12h3v8h-3zM2 21h20v2H2z"/></symbol>
+  <symbol id="mail" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m8 7 8-5H4z"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="caja">
+    <a class="marca" href="#">
+      <svg class="iso"><use href="#iso"/></svg>
+      <span>
+        <b>Herrajes Ituzaingó</b>
+        <small>Bacacay 939</small>
+      </span>
+    </a>
+    <a class="btn btn-linea btn-chico solo-gr" href="#rubros">Qué vendemos</a>
+    <a class="btn btn-wa" href="https://wa.me/5491140375193" target="_blank" rel="noopener">
+      <svg><use href="#wa"/></svg> WhatsApp
+    </a>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ portada ============ -->
+<section class="hero">
+  <div class="caja">
+    <span class="rotulo">Bacacay 939 · Ituzaingó</span>
+    <h1>Herrajes para<br><em>muebles</em> y <em>obras</em>.</h1>
+    <p class="bajada">Y los equipos para automatizar tu portón. Atendido por sus dueños, hace años, en la misma esquina.</p>
+
+    <div class="sellos">
+      <span class="sello">
+        <svg class="estrella"><use href="#star"/></svg>
+        <b>4,5</b><span>· 603 opiniones en Google</span>
+      </span>
+      <span class="sello"><b>Abierto</b><span>lunes a sábado</span></span>
+    </div>
+
+    <div class="acciones">
+      <a class="btn btn-wa" href="https://wa.me/5491140375193" target="_blank" rel="noopener">
+        <svg><use href="#wa"/></svg> Consultanos por WhatsApp
+      </a>
+      <a class="btn btn-linea" href="tel:01146230653">
+        <svg><use href="#tel"/></svg> 4623-0653
+      </a>
+    </div>
+
+    <div class="grafico rev">
+      <svg class="iso-xl" viewBox="0 0 64 64"><use href="#iso"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ rubros ============ -->
+<section id="rubros">
+  <div class="caja">
+    <span class="rotulo">Qué vendemos</span>
+    <h2>Tres cosas,<br>y de las tres tenemos todo.</h2>
+    <p class="sub">Si estás armando un mueble, levantando una obra o cansado de bajarte del auto para abrir el portón, tenemos lo que necesitás.</p>
+
+    <div class="rubros">
+      <article class="rubro rev">
+        <div class="ico"><svg><use href="#cajon"/></svg></div>
+        <h3>Herrajes para muebles</h3>
+        <p>Todo lo que lleva un mueble por dentro y que no se ve hasta que falla.</p>
+        <ul><li>Correderas</li><li>Bisagras</li><li>Tiradores</li><li>Patas y regatones</li><li>Cerraduras</li></ul>
+      </article>
+      <article class="rubro rev">
+        <div class="ico"><svg><use href="#obra"/></svg></div>
+        <h3>Herrajes para obra</h3>
+        <p>Para el carpintero, el herrero y el que está construyendo.</p>
+        <ul><li>Herrajes de abertura</li><li>Fijaciones</li><li>Cintas métricas</li><li>Accesorios</li></ul>
+      </article>
+      <article class="rubro rev">
+        <div class="ico"><svg><use href="#porton"/></svg></div>
+        <h3>Automatización de portones</h3>
+        <p>Equipos para motorizar el portón de tu casa o del edificio.</p>
+        <ul><li>Motores</li><li>Controles</li><li>Accesorios</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ por que ---------- -->
+<section class="franja">
+  <div class="caja">
+    <span class="rotulo">Por qué acá</span>
+    <h2>Lo que más repiten<br>los que ya vinieron.</h2>
+    <p class="sub">Tres cosas que aparecen una y otra vez en las 603 opiniones de Google.</p>
+
+    <div class="motivos">
+      <article class="motivo rev">
+        <span class="n">1</span>
+        <b>El precio</b>
+        <p>Es la palabra que más se repite en las opiniones: aparece 85 veces.</p>
+      </article>
+      <article class="motivo rev">
+        <span class="n">2</span>
+        <b>El surtido</b>
+        <p>La segunda más repetida, 32 veces. “Tienen de todo” es la frase que más vuelve.</p>
+      </article>
+      <article class="motivo rev">
+        <span class="n">3</span>
+        <b>Atendido por sus dueños</b>
+        <p>No hay que explicarle a nadie qué herraje buscás. Del otro lado del mostrador saben.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ opiniones ============ -->
+<section>
+  <div class="caja">
+    <span class="rotulo">Opiniones de Google</span>
+    <h2>4,5 sobre 603.</h2>
+    <p class="sub">Textuales, de la ficha de Google de Herrajes Ituzaingó.</p>
+
+    <div class="ops">
+      <article class="op rev">
+        <div class="estrellas">★★★★★</div>
+        <p>“Muy completo, tienen de todo, excelente atención y buenos precios.”</p>
+        <cite>Daniel Cañal</cite>
+      </article>
+      <article class="op rev">
+        <div class="estrellas">★★★★★</div>
+        <p>“Buena atención y buen precio, surtido muy completo y buena calidad.”</p>
+        <cite>Opinión destacada en Google</cite>
+      </article>
+      <article class="op rev">
+        <div class="estrellas">★★★★★</div>
+        <p>“Excelente atención, atendido por sus dueños.”</p>
+        <cite>Opinión destacada en Google</cite>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ donde ============ -->
+<section class="franja" id="donde">
+  <div class="caja">
+    <span class="rotulo">Dónde estamos</span>
+    <h2>Bacacay 939,<br>Ituzaingó.</h2>
+
+    <div class="donde" style="margin-top:22px">
+      <div>
+        <div class="dato">
+          <svg><use href="#pin"/></svg>
+          <span><b>Bacacay 939</b><span>Ituzaingó, Provincia de Buenos Aires</span></span>
+        </div>
+        <div class="dato">
+          <svg><use href="#reloj"/></svg>
+          <span><b>Lunes a viernes de 13 a 19 h</b><span>Sábados de 8 a 13 h</span></span>
+        </div>
+        <div class="dato">
+          <svg><use href="#wa"/></svg>
+          <span><b><a href="https://wa.me/5491140375193" target="_blank" rel="noopener">11 4037-5193</a></b><span>WhatsApp, para consultar stock y precios</span></span>
+        </div>
+        <div class="dato">
+          <svg><use href="#tel"/></svg>
+          <span><b><a href="tel:01146230653">4623-0653</a></b><span>El teléfono del local</span></span>
+        </div>
+        <div class="dato">
+          <svg><use href="#mail"/></svg>
+          <span><b><a href="mailto:herrajesituzaingo@gmail.com">herrajesituzaingo@gmail.com</a></b><span>Para pedidos y presupuestos</span></span>
+        </div>
+        <div class="dato">
+          <svg><use href="#ig"/></svg>
+          <span><b><a href="https://www.instagram.com/herrajesituzaingo/" target="_blank" rel="noopener">@herrajesituzaingo</a></b><span>Novedades y lo que va entrando</span></span>
+        </div>
+      </div>
+
+      <div class="mapa rev">
+        <iframe title="Mapa de Herrajes Ituzaingó, Bacacay 939" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Bacacay%20939,%20Ituzaing%C3%B3&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="caja">
+    <div>
+      <b>HERRAJES ITUZAINGÓ</b><br>
+      Bacacay 939, Ituzaingó · 4623-0653 · 11 4037-5193
+    </div>
+    <div class="firma">
+      Demo hecha por <a href="https://tunegocioenlasredes.com.ar" target="_blank" rel="noopener">Tu Negocio En Las Redes</a>.<br>
+      Página de muestra, sin publicar.
+    </div>
+  </div>
+</footer>
+
+<a class="btn btn-wa flota" href="https://wa.me/5491140375193" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp a Herrajes Ituzaingó">
+  <svg><use href="#wa"/></svg> WhatsApp
+</a>
+
+<script>
+/* Aparecer al scrollear. NO se usa IntersectionObserver a proposito: con un
+   scroll rapido las secciones pasan entre frames, no se registran y quedan
+   invisibles para siempre. Ademas hay una red de seguridad a los 4 segundos. */
+(function () {
+  var els = [].slice.call(document.querySelectorAll('.rev'));
+  if (!els.length) return;
+  var pedido = false;
+  function revisar() {
+    pedido = false;
+    var alto = window.innerHeight;
+    for (var i = els.length - 1; i >= 0; i--) {
+      if (els[i].getBoundingClientRect().top < alto - 60) {
+        els[i].classList.add('in');
+        els.splice(i, 1);
+      }
+    }
+  }
+  function pedir() { if (!pedido) { pedido = true; requestAnimationFrame(revisar); } }
+  addEventListener('scroll', pedir, { passive: true });
+  addEventListener('resize', pedir, { passive: true });
+  revisar();
+  setTimeout(function () {
+    document.querySelectorAll('.rev').forEach(function (e) { e.classList.add('in'); });
+  }, 4000);
+})();
+</script>
+</body>
+</html>
